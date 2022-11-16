@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Main({info}) {
+  
     return (
         <main >     
              <div className='wrap'>
@@ -20,7 +21,7 @@ function Main({info}) {
                     <h1>Infection Risk</h1>
                     {info.map((risk)=><p> {risk.Infection_Risk} %</p>)}
                 </div>
-            </div>  
+            </div>
     </main>
   )
 }

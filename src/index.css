@@ -1,25 +1,89 @@
 *{
   margin:0;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+html {
+  height: 100%;
 }
 
-
+header, main{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 
 span {
   color: red;
+} 
+
+                    /* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+                    /* HEADER */
+
+.header-search{
+ display: flex;
+ justify-content: center;
+}
+                    
+input{
+border-top: none;
+border-left: none;
+border-right: none;
+text-align: center;
+font-weight: 900;
+
+}
+                    
+input:focus {
+background-color: black;
+color:white;
+}
+                    
+button {
+height: 35px;
+width: 45px;
+background-color: white;
+border: none;
+}
+                    
+button:hover {
+cursor: pointer;
+}
+                                
+
+
+                      /* CARDS */
+main h1 {
+  display: flex;
+  justify-content: center;
+  color: red;
+  padding-bottom: 15px;
 }
 
 .wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
+  
 }
 
 .cards {
   border: 1px solid black;
-  margin: 15px;
+  margin: 20px;
   text-align: center;
   padding: 45px;
   width: 50%;
+  box-shadow: 23px 23px 15px -3px rgba(0,0,0,0.1);
+  background-color: black;
+  color: white;
   
 }
 

@@ -1,9 +1,13 @@
 import React from 'react'
 
-function Header() {
+function Header({handleChange, handleClick}) {
   return (
     <header>
-        <h1><span>Di</span>s<span>e</span>ase Tracker</h1>
+      <div className='header-search'>
+        <input type="search" onChange={handleChange} placeholder="Search Countries..."/>
+        <button onClick={handleClick}><i className="fa-solid fa-magnifying-glass-location fa-xl"></i></button>
+        
+        </div>
     </header>
   )
 }
